@@ -29,8 +29,7 @@ public class Interaccion {
     @JoinTable(
         name = "campeon_has_interaccion",
         joinColumns = @JoinColumn(name="interaccion_id_interaccion"),
-        inverseJoinColumns = @JoinColumn(name="campeon_id_campeon"),
-        inverseJoinColumns = @JoinColumn(name="campeon_counter_id_counter")
+        inverseJoinColumns = @JoinColumn(name="campeon_id_campeon")
     )
     private List<Campeon> interacciones = new ArrayList<>(); 
 }
